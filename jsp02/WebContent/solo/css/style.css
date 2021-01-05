@@ -1,0 +1,141 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jua&family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jua&family=Nanum+Gothic&family=Noto+Sans+KR:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+*{
+	text-align: center;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+#header{
+	font-size: 60px;
+	letter-spacing: 5px;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	
+}
+h1{
+	margin: 50px;
+	padding: 50px 0 10px 0;
+}
+
+#menu{
+	font-size: 1.3em;
+	padding: 12px;
+	margin: 0;
+	background-color: #ffe600;
+}
+nav{margin:30px;}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+nav span a{
+	font-weight: bold;
+	margin: 0 70px;
+}
+nav span a:hover{
+	background-color:#f2f2f2; 
+}
+
+footer{
+	text-align: left;
+	background-color: #cccccc;
+	font-size: 0.9em;
+	line-height: 18px;
+}
+
+#intContent{
+	margin-left: auto; 
+	margin-right:auto;
+}
+
+#coner{
+	color: #000033;
+	padding: 20px 50px 20px 0;
+	margin: 0px 30px;
+	position: absolute;
+    top: 2px;
+    right: 0;
+    font-size: 14px;
+}
+
+#co_h:hover{color: #b33c00;}
+#co_l:hover{color: #b33c00;}
+#co_j:hover{color: #b33c00;}
+
+#co_h,#co_l,#co_j{
+	margin: 0 20px; font-family: 'Josefin Sans', sans-serif;
+	}
+
+#loginBox input{
+	width: 500px;
+    height: 50px;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+#btnLogin{
+	background: #ffe600;
+    color: black;
+    height: 50px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 17px;
+    width: 500px;
+    margin-top: 20px;
+    border: 0;
+    outline: 0;
+}
+
+#loginBox{
+	width: 1000px;
+    padding: 50px 60px;
+    margin: auto;
+}
+#loginForm{
+    border: 1px solid #ddd;
+    padding: 50px 60px;
+}
+.storeFont{font-size: 16px;}
+
+.store{padding-bottom: 50px; float: }
+
+.joinInput{
+	padding: 70px 0 70px 650px;
+	text-align: left;
+}
+#joinTitle{
+	font-weight: bold;
+	font-size: 35px;
+	padding-left: 350px;
+	text-align: left;
+	}
+
+#btnJoin{
+	background: #333333;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 20px;
+    border: 0;
+    outline: 0;
+    width: 480px;
+    height: 40px;
+}
+
+.joinInput input{
+    width: 230px;
+    height: 30px;
+    border: 1px solid #bfbfbf;
+    padding: 0 10px;
+    box-sizing: border-box;
+}

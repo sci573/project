@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="notice">
+	<select id="NOlist" resultType="solo.dto.NotiDTO">
+		select idx,name,content,post_date 
+	    from notice 
+	    where ${searchkey} like #{search} 
+	    order by idx desc 
+	</select>
+
+	<select id="NOlistAll" resultType="solo.dto.NotiDTO">
+		select idx,name,content,post_date 
+	    from notice
+	    where name like #{search} or content like #{search}
+	    order by idx desc
+	</select>
+	
+	<insert id="NOinsert">
+		insert into notice
+		(idx, name, passwd, content)
+		values (notice_seq.nextval, #{name}, #{passwd}, #{content})
+	</insert>
+	
+	<delete id="NOdelete">
+		delete from notice
+		where idx=#{idx}
+	</delete>
+	
+	<update id="NOupdate">
+		update notice
+		set name=#{name}, passwd=#{passwd}, content=#{content}
+		where idx=#{idx}
+	</update>
+	
+	<select id="NOcheck" resultType="int">
+		select count(*) from notice
+		where idx=#{idx} and passwd=#{passwd}
+	</select>
+
+	<select id="NOdetail" parameterType="int" resultType="solo.dto.NotiDTO">
+		select * from notice
+		where idx=#{idx}
+	</select>
+</mapper>
+
